@@ -1,0 +1,133 @@
+* {
+  font-family: monospace;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  background-color: rgb(19, 19, 28);
+}
+body main {
+  position: relative;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
+}
+body main .container__targetas {
+  padding: 1.6rem 1.6rem 0 1.6rem;
+  min-width: 29rem;
+  max-width: 29rem;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: center;
+  border: 3px #ffea4b solid;
+}
+body main .container__targetas h2 {
+  padding: 4px;
+  line-height: 2.5rem;
+  text-align: center;
+  font-size: medium;
+  color: rgb(19, 19, 28);
+  background-color: #ffea4b;
+}
+body main .container__targetas .container__input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+body main .container__targetas .container__input label {
+  cursor: pointer;
+  width: max-content;
+  padding: 4px;
+  display: block;
+  color: rgb(19, 19, 28);
+  font-size: small;
+  font-weight: 600;
+  background-color: #ffffff;
+}
+body main .container__targetas .container__input label:hover {
+  background-color: #ffea4b;
+}
+body main .container__targetas .container__input .labelCupon:hover {
+  background-color: #91ddeb;
+}
+body main .container__targetas .container__input input {
+  margin-top: 8px;
+  padding: 6px;
+  display: block;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  border-bottom: 2px #ffea4b solid;
+  border-left: 2px #ffea4b solid;
+  border-radius: none;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  color: #ffffff;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  outline: none;
+  transition: border-color 300ms;
+  transition: border 300ms;
+}
+body main .container__targetas .container__input input:focus {
+  border-color: #ffffff;
+  border: 2px solid;
+}
+body main .container__targetas .container__input input::selection {
+  background-color: aliceblue;
+  color: rgb(19, 19, 28);
+}
+body main .container__targetas button {
+  cursor: pointer;
+  margin-top: 1.6rem;
+  display: inline;
+  color: rgb(19, 19, 28);
+  padding: 2px;
+  background-color: #ffffff;
+  border: 3px #ffffff solid;
+  width: max-content;
+  font-weight: 900;
+  margin-bottom: 0;
+  transition: transform 300ms;
+  transition: background-color 400ms;
+}
+body main .container__targetas button:hover {
+  background-color: #ffea4b;
+}
+body main .container__targetas button:active {
+  transform: scale(1.1);
+}
+body main .container__targetas .CanjearCuponBtn:hover {
+  background-color: #91ddeb;
+}
+body main .container__targetas p {
+  color: #ffffff;
+  font-size: medium;
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+
+@media (min-width: 600px) {
+  body main {
+    justify-content: unset;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

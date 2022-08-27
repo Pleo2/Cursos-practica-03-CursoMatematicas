@@ -1,0 +1,138 @@
+@import "var";
+*{font-family: monospace; margin: 0; padding: 0; box-sizing: border-box; border-radius: 2px;}
+html{font-size: 62.5%; }
+body{
+    width: 100%;
+    background-color: rgb(19, 19, 28);
+    main{
+        position: relative;
+        top: 4rem;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 90%;
+        // background-color: rgb(148, 155, 183);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4rem;
+        .container__targetas{
+            padding: 1.6rem 1.6rem 0 1.6rem;
+            min-width: 29rem ;
+            max-width: 29rem;
+            height: max-content;
+            // background-color: aqua;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            
+            align-items: center;
+
+            //todo border
+            border: 3px $secundary-color solid;
+            h2{
+                padding: 4px;
+                line-height: 2.5rem;
+                text-align: center;
+                font-size: medium;
+                color: $font-color;
+                background-color: $secundary-color;
+            }
+            .container__input{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+                label{
+                    cursor: pointer;
+                    width: max-content;
+                    padding: 4px;
+                    display: block;
+                    color: $font-color;
+                    font-size: small;
+                    font-weight: 600;
+                    background-color: $primary-color;
+                    &:hover{
+                        background-color: $secundary-color;
+                    }
+                }
+                .labelCupon{
+                    &:hover{
+                        background-color: #91ddeb;
+                    }
+                }
+                input{
+                    margin-top: 8px;
+                    padding: 6px;
+                    display: block;
+                    width: 100%;
+                    background-color: inherit;
+                    border: none;
+                    border-bottom: 2px $secundary-color solid;
+                    border-left: 2px $secundary-color solid;
+                    border-radius: none;
+                    border-top-left-radius: 0 ;
+                    border-bottom-right-radius: 0;
+
+                    color: $primary-color;
+                    text-align: center;
+                    font-family: 'Courier New', Courier, monospace;
+                    outline: none;
+
+                    transition: border-color 300ms;
+                    transition: border 300ms;
+
+                    &:focus{
+                        border-color: $primary-color;
+                        border: 2px solid;
+                    }
+                    &::selection{
+                        background-color: aliceblue;
+                        color: $font-color;
+                    }
+                }
+            }
+            button{
+                cursor: pointer;
+                margin-top: 1.6rem;
+                display: inline;
+                color: $font-color;
+                padding: 2px;
+                background-color: $primary-color;
+                border: 3px $primary-color solid;
+                width: max-content;
+                font-weight: 900;
+                margin-bottom: 0;
+                transition: transform 300ms;
+                transition: background-color 400ms;
+                &:hover{
+                    background-color: $secundary-color;
+                }
+                &:active{
+                    transform: scale(1.1);
+                }
+
+            }
+            .CanjearCuponBtn{
+                &:hover{
+                    background-color: #91ddeb;
+                }
+            }
+            p{
+                color: $primary-color;
+                font-size: medium;
+                font-weight: 600;
+                margin-bottom: 1.6rem;
+            }
+        }
+    }
+}
+
+
+@media(min-width: 600px){
+    body{
+        main{
+            justify-content: unset;
+        }
+    }
+}
