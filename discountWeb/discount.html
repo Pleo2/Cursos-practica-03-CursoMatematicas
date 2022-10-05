@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica de matematicas con JavaScript</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="../../../../kinoko-project/web/normalize.css">
 </head>
 <body>
     <main>
@@ -53,30 +52,30 @@
                 <!-- se agregara mediante JavaScript -->
             </p>
         </div>
+        <!-- Cupon descuento con objetos -->
+        <div class="container__targetas cupon-obj">
+            <h2 style="background-color:rgb(163, 255, 160);">Reclamar Cupones DESCUENTO (metodo de obj)</h2>
 
-        <div class="container__targetas">
-            <h2 style="background-color: rgb(163, 255, 160);">Total a Pagar con DESCUENTO</h2>
-            
             <div class="container__input">
-                <div class="input__container--price">
-                    <label for="price" class="label-1">Precio de el Producto</label>
-                    <input type="text" id="price"  >
+                <div class="input__container--total-price__obj">
+                    <label for="Price-cupon__obj" class="label-1 labelCupon">Precio de el Producto</label>
+                    <input type="text" id="Price-cupon__obj"  >
                 </div>
                 
-                <div class="input__container--discount">
-                    <label for="discuount" class="label-2">Descuento</label>
-                    <input type="text" id="discuount"  >
+                <div class="input__container--cupon-code">
+                    <label for="Code-cupon__obj" class="label-2 labelCupon">Codigo Descuento</label>
+                    <input type="text" id="Code-cupon__obj"  >
                 </div>
             </div>
             
-            <button class="btn">Calcular</button>
+            <button class="CanjearCupon__obj--Btn" >Canjear Cupon</button>
             
-            <p class="PriceTOpaid">
+            <p class="cupon_canje__obj">
                 <!-- se agregara mediante JavaScript -->
             </p>
         </div>
-    </main>
 
+    </main>
     <!-- JavaScript code -->
     <script src="discount.js"></script>
 </body>
